@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar do João" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou João_</p>
+        <h1>Eu estudo Programação</h1>
+        <p>Sou estudante do terceiro ano de ensino médio. Estudo na E.E Francisco Euphrásio Monteiro.
+             Veja alguns projetos que já desenvolvi nas aulas de programação.</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto Quente e Frio">
+                    <div class="card-body">
+                        <h5 class="card-title">Lógica de programação: criando arte interativa com P5.js</h5>
+                        <p class="card-text">Nesse projeto entendemos um pouco mais sobre como trabalhar com
+                             números aleatórios, uma vez que o ponto estará oculto na tela. Sendo assim, cabe
+                              a nós encontrá-lo. Se estivermos muito longe do ponto oculto, o círculo ficará grande,
+                               representando a longa distância, mas se estivermos perto, conseguimos encontrá-lo a
+                                partir do sensor que calcula a distância entre o cursor e o ponto oculto.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto jogo de corrida (pt. 1)">
+                    <div class="card-body">
+                        <h5 class="card-title">Listas, funções e repetição: criando um jogo de corrida (pt. 1)</h5>
+                        <p class="card-text">Nesse projeto utilizamos a lógica de programação. criar os primeiros
+                             personagens, a linha de chegada, a verificar quem venceu o jogo, e a utilizar as
+                              teclas do teclado para movimentar os personagens. Trabalhando com muitos conceitos
+                               importantes de programação, mas também se divertindo durante o processo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto jogo de corrida (pt. 2)">
+                    <div class="card-body">
+                        <h5 class="card-title">Explorando o Universo: Listas, funções e repetição: criando um jogo de corrida (pt. 2)
+                        </h5>
+                        <p class="card-text">Nesse projeto otimizamos nosso jogo de corrida, trazendo alguns detalhes
+                             para nosso código. Transformando nossa linha de chegada para que tivesse um efeito ou
+                              parecesse com uma linha de chegada, pois até o momento tinhamos apenas um retângulo. 
+                              melhoramos nossa função desenhaLinhaDeChegada, que programamos no outro projeto, 
+                              tornando fácil e organizado saber onde precisamos modificar.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lógica de programação: criando arte interativa com P5.js</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Primeiro, criamos um ponto aleatório na tela usando a função random e as variáveis x e y.
+                       Depois, aprendemos a usar as funções setup e draw para controlar quando o ponto é gerado 
+                       e redesenhado na tela. Em seguida, utilizamos a condição if para verificar se o mouse está
+                        na posição do ponto. Por fim, usamos a função int para garantir que ambos sejam números 
+                        inteiros..</p>
+                    <p>Trabalhamos com formas geométricas, com números aleatórios e também começamos a pensar um
+                         pouco sobre como encontraríamos esse ponto oculto. Para resolver esse problema, usamos o
+                          teorema de Pitágoras, aplicando-o na prática.</p>
+                    <p>Também trabalhamos com números aleatórios para poder somar os valores, para incrementar ou
+                         diminuir esse valor e também começamos a entender quais são os limites de uma tela que 
+                         tínhamos e para isso utilizamos o Constrain.</p>
+                    <p>Primeiro, removemos algumas variáveis desnecessárias do código para otimizá-lo, 
+                        simplificando a lógica. Depois, implementamos um movimento aleatório para o ponto oculto, 
+                        tornando a busca mais difícil. Em seguida, utilizamos a função constrain para limitar o 
+                        movimento do ponto oculto dentro da tela. Por fim, ajustamos os parâmetros de velocidade 
+                        e distância para controlar o nível de dificuldade.</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto Quente e Frio">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://joao-015.github.io/Quente-e-Frio/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/joao-015/Quente-e-Frio">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jogo de corrida (pt. 1)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Primeiro, criamos dois personagens usando a função text e emojis, posicionando-os na lateral
+                         esquerda da tela.Depois, adicionamos uma linha de chegada na lateral direita da tela 
+                         utilizando a função rect. Em seguida, declaramos variáveis para controlar a posição horizontal
+                          (x) de cada personagem, adicionando-as dentro da função draw. Por fim, utilizamos a função 
+                          random para inserir aleatoriedade ao movimento dos personagens, tornando a corrida mais 
+                          imprevisível.
+                    </p>
+                    <p>Primeiro, criamos uma condição if para verificar se o jogador 1 cruzou a linha de chegada.
+                        Depois, adicionamos outra condição, dessa vez para verificar se o jogador 2 cruzou a linha 
+                        de chegada. Em seguida, usamos a função noLoop para pausar o jogo após um jogador vencer. Por
+                         fim, simplificamos o código usando o operador += para incrementar as posições dos jogadores.</p>
+                    <p>Primeiro, aprendemos a usar a função keyReleased() para detectar quando uma tecla é solta.
+                        Depois, implementamos a lógica para controlar o movimento de quatro jogadores usando as
+                         teclas "a" , "s" , "z" e "x" . Em seguida, utilizamos a variável focused para mudar a cor de 
+                         fundo e indicar se o jogo está ativo ou não. Por fim, aprimoramos a experiência do usuário com um 
+                         feedback visual, mostrando quando o jogo está pronto para ser jogado.</p>
+                    <p>Primeiro, criamos a função ativaJogo para controlar a cor de fundo do jogo dependendo se o 
+                        canvas está em foco ou não. Depois, desenvolvemos a função desenhaJogadores para desenhar 
+                        os jogadores na tela de forma mais organizada. Em seguida, criamos a função desenhaLinhaDeChegada
+                         para desenhar a linha de chegada do jogo. Por fim, criamos a função verificaVencedor para 
+                         identificar qual jogador venceu a corrida e exibir a mensagem correspondente.
+                    </p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto Listas, funções e repetição: criando um jogo de corrida (pt. 1)">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://joao-015.github.io/CORRIDA-PT.1/">Ver projeto ao
+                        vivo</a>
+                    <a href="https://github.com/joao-015/CORRIDA-PT.1">Ver código do
+                        projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Explorando o Universo: Listas, funções e repetição: criando um jogo de corrida (pt. 2)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Conseguimos deslocar nosso personagem da esquerda para a direita e, em seguida, fizemos 
+                        a verificação para determinar quem vence. Imaginamos como seria interessante se 
+                        pudéssemos usar teclas para movimentar nossos personagens. Para isso, utilizamos várias
+                         funções do P5JS, como a keyReleased, que é acionada quando a tecla é solta, permitindo
+                          movimentos mais aleatórios e divertidos.</p>
+                    <p>Depois, começamos a utilizar o conceito de função, aprendendo a criar nossas próprias 
+                        funções, sem reutilizar as do P5JS. Criamos funções para ativar o jogo, desenhar os 
+                        jogadores, desenhar a linha de chegada e verificar quem foi o vencedor.</p>
+                    <p>Melhoramos nosso projeto, transformando a linha de chegada, que era um retângulo 
+                        simples com fundo branco, em uma linha quadriculada, semelhante às que vemos em jogos 
+                        de corrida. Para isso, usamos laços de repetição para reconhecer padrões, criando uma
+                         linha de chegada mais divertida e parecida com os jogos que assistimos e jogamos.</p>
+                    <img src="img/projeto-3.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://joao-015.github.io/CORRIDA-PT.2/">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/joao-015">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por João Vitor Proença</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
